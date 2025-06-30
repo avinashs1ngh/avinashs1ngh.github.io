@@ -1,0 +1,54 @@
+[
+  {
+    "id": 1,
+    "title": "ONE OPS",
+    "category": "Application",
+    "image": "/assets/images/OneOps.svg",
+    "link": "/project/1",
+    "description": "A comprehensive platform for managing projects, tasks, inventory, and CRM functionalities. Built with the MERN stack, it offers a seamless user experience with real-time updates and responsive design for both web and mobile (React Native). Deployed on an Ubuntu VPS for production.",
+    "screenshots": [
+      "/assets/images/oneops-screenshot1.png",
+      "/assets/images/oneops-screenshot2.png",
+      "/assets/images/oneops-screenshot3.png"
+    ],
+    "links": {
+      "live": "https://oneops.example.com",
+      "github": "https://github.com/avinashs1ngh/oneops"
+    },
+    "technologies": ["React", "Node.js", "Express.js", "MongoDB", "React Native"]
+  },
+  {
+    "id": 2,
+    "title": "Silicon Leaf Todo",
+    "category": "Web development",
+    "image": "/assets/images/siliconLeaf.png",
+    "link": "/project/2",
+    "description": "A modern todo application with features like task prioritization, due dates, and user authentication. Designed with a clean UI and optimized for performance, it supports cross-device synchronization using a RESTful API.",
+    "screenshots": [
+      "/assets/images/siliconleaf-screenshot1.png",
+      "/assets/images/siliconleaf-screenshot2.png"
+    ],
+    "links": {
+      "live": "https://siliconleaf.example.com",
+      "github": "https://github.com/avinashs1ngh/siliconleaf-todo"
+    },
+    "technologies": ["React", "TypeScript", "Tailwind CSS", "Node.js"]
+  },
+  {
+    "id": 3,
+    "title": "Easy Bill",
+    "category": "Web development",
+    "image": "/assets/images/imageplaceholder.png",
+    "link": "/project/3",
+    "description": "A billing management system for small businesses, featuring invoice creation, payment tracking, and reporting. Built with a focus on simplicity and efficiency, it integrates with third-party payment gateways.",
+    "screenshots": [
+      "/assets/images/easybill-screenshot1.png",
+      "/assets/images/easybill-screenshot2.png"
+    ],
+    "links": {
+      "live": "https://easybill.example.com",
+      "github": "https://github.com/avinashs1ngh/easybill"
+    },
+    "technologies": ["React", "Express.js", "MySQL", "Bootstrap"]
+  }
+]

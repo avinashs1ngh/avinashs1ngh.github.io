@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "name": "Daniel Lewis",
+    "date": "14 June, 2021",
+    "text": "Avinash was hired to create a corporate identity. We were very pleased with the work done. She has a lot of experience and is very concerned about the needs of client.",
+    "avatar": "/assets/images/avatar1.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Jessica Miller",
+    "date": "14 June, 2021",
+    "text": "Avinash delivered exceptional work on our website redesign. Her attention to detail and creativity exceeded our expectations.",
+    "avatar": "/assets/images/avatar2.jpg"
+  }
+]

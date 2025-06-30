@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "title": "Design Conferences in 2022",
+    "category": "Design",
+    "date": "Feb 23, 2022",
+    "text": "Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.",
+    "image": "/assets/images/blog1.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Best Fonts Every Designer",
+    "category": "Design",
+    "date": "Feb 23, 2022",
+    "text": "Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.",
+    "image": "/assets/images/blog2.jpg"
+  }
+]
