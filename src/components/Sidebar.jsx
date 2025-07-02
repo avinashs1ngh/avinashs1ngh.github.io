@@ -3,7 +3,9 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { FaEnvelope, FaPhone, FaBirthdayCake, FaMapMarkerAlt, FaLinkedin, FaTwitter, FaGithub } from 'react-icons/fa';
 import { IoCode, IoCodeSlash, IoDownloadOutline } from 'react-icons/io5';
 import SkillsCard from './ui/SkillsCard';
+import { useIsMobile } from '../hooks/useIsMobile';
 function Sidebar() {
+    const isMobile = useIsMobile();
   const [isOpen, setIsOpen] = useState(false);
   const asideRef = useRef(null);
   const [expandedHeight, setExpandedHeight] = useState('auto');
@@ -15,13 +17,13 @@ function Sidebar() {
       setExpandedHeight(`${height}px`);
     }
   }, [isOpen]);
-
+const collapsedHeight = isMobile ? '250px' : '280px';
   return (
-    <motion.aside
+   <motion.aside
       ref={asideRef}
-      className="bg-secondary-dark border border-primary-dark rounded-2xl p-5 m-4 lg:m-8 lg:sticky lg:top-16 lg:max-w-sm overflow-hidden"
-      initial={{ height: '310px' }}
-      animate={{ height: isOpen ? expandedHeight : '310px' }}
+      className="bg-secondary-dark border border-primary-dark rounded-2xl p-5 m-4 lg:mt-8 lg:ml-8 lg:mb-8 lg:mr-0 lg:sticky lg:top-5 lg:max-w-sm overflow-hidden"
+      initial={{ height: collapsedHeight }}
+      animate={{ height: isOpen ? expandedHeight : collapsedHeight }}
       transition={{ duration: 0.5, ease: 'easeInOut' }}
     >
       <div className="flex items-center gap-4">
@@ -44,7 +46,7 @@ function Sidebar() {
         onClick={() => setIsOpen(!isOpen)}
         className="bg-accent-gold text-primary-dark p-2 rounded-lg flex items-center justify-center mx-auto mt-4"
       >
-        {isOpen ? 'Hide' : 'Show'} More Info
+        {isOpen ? 'Hide' : 'Show'} Details
       </button>
       <AnimatePresence>
         {isOpen && (
@@ -60,14 +62,18 @@ function Sidebar() {
                 <FaEnvelope className="text-accent-gold" />
                 <div>
                   <span className="text-xs text-text-gray uppercase">Email</span>
-                  <p className="text-sm text-text-light">Avinashsingh.codes@gmail.com</p>
+                  <p className="text-sm text-text-light"><a href="mailto:Avinashsingh.codes@gmail.com" className="text-sm text-text-light hover:text-accent-gold">
+                    Avinashsingh.codes@gmail.com
+                  </a></p>
                 </div>
               </li>
               <li className="flex items-center gap-3">
                 <FaPhone className="text-accent-gold" />
                 <div>
                   <span className="text-xs text-text-gray uppercase">Phone</span>
-                  <p className="text-sm text-text-light">+91 9328705012</p>
+                  <p className="text-sm text-text-light"> <a href="tel:+919328705012" className="text-sm text-text-light hover:text-accent-gold">
+                    +91 9328705012
+                  </a></p>
                 </div>
               </li>
               <li className="flex items-center gap-3">
@@ -85,7 +91,7 @@ function Sidebar() {
                 </div>
               </li>
             </ul>
-            <div className="flex gap-4 mt-4">
+            <div className="flex gap-5 mt-4 ml-4">
               <a
                 href="https://www.linkedin.com/in/avinashs1ngh"
                 target="_blank"

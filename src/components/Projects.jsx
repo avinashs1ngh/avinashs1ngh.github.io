@@ -13,7 +13,7 @@ function Projects() {
 
   return (
     <motion.section
-      className="bg-secondary-dark border border-primary-dark rounded-2xl p-6 lg:p-8 shadow-card"
+      className="bg-secondary-dark border border-primary-dark rounded-2xl p-6 lg:p-8 shadow-card mt-2"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}

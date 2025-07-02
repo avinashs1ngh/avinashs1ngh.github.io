@@ -1,8 +1,6 @@
 import { motion } from 'framer-motion';
-import testimonialsData from '../data/testimonials.json';
-import clientsData from '../data/clients.json';
 
-function About({ openModal }) {
+function About() {
   const services = [
     
     {

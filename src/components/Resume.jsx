@@ -37,7 +37,7 @@ import educationData from '../data/education.json';
 
 
   
-function Journey() {
+function Resume() {
   return (
     <motion.section
       className="bg-secondary-dark border border-primary-dark rounded-2xl p-6 lg:p-8 shadow-card mt-2"
@@ -45,20 +45,20 @@ function Journey() {
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
     >
-      <h2 className="text-2xl lg:text-3xl font-semibold text-text-light mb-4">Eductaion & Experince</h2>
+      <h2 className="text-2xl lg:text-3xl font-semibold text-text-light mb-4">Resume</h2>
       <div className="border-b-2 border-accent-gold w-10 mb-6"></div>
 
       <h3 className="text-xl lg:text-2xl font-semibold text-text-light mb-4">Education</h3>
       <div className="relative pl-12 mb-6">
         {educationData.map((edu, index) => (
           <div key={edu.id} className="mb-6 relative">
-            <div className="absolute -left-10 top-0 w-2 h-2 bg-accent-gold rounded-full border-2 border-primary-dark"></div>
+            <div className="absolute -left-11 top-3 w-3 h-3 bg-accent-gold rounded-full border-2 border-primary-dark z-10"></div>
             {index !== educationData.length - 1 && (
               <div className="absolute -left-10 top-2 w-0.5 h-full bg-primary-dark"></div>
             )}
-            <h4 className="text-lg font-medium text-text-light">{edu.title}</h4>
+            <h4 className="text-lg font-medium text-text-light">{edu.description}</h4>
             <span className="text-sm text-accent-gold-light">{edu.duration}</span>
-            <p className="text-text-gray text-sm mt-2">{edu.description}</p>
+            <p className="text-text-gray text-sm mt-2">{edu.title}</p>
           </div>
         ))}
       </div>
@@ -67,7 +67,7 @@ function Journey() {
     <div className="relative pl-12 mb-6">
         {experiences.map((exp, index) => (
           <div key={index} className="mb-6 relative">
-            <div className="absolute -left-10 top-0 w-2 h-2 bg-accent-gold rounded-full border-2 border-primary-dark"></div>
+            <div className="absolute -left-11 top-3 w-3 h-3 bg-accent-gold rounded-full border-2 border-primary-dark z-10"></div>
             {index !== experiences.length - 1 && (
               <div className="absolute -left-10 top-2 w-0.5 h-full bg-primary-dark"></div>
             )}
@@ -103,4 +103,4 @@ function Journey() {
   );
 }
 
-export default Journey;
+export default Resume;

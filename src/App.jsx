@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Sidebar from './components/Sidebar';
 import Navbar from './components/Navbar';
 import About from './components/About';
-import Journey from './components/Journey';
+import Resume from './components/Resume';
 import Projects from './components/Projects';
 import Blog from './components/Blog';
 import Contact from './components/Contact';
@@ -14,10 +14,7 @@ function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [modalData, setModalData] = useState({});
 
-  const openModal = (data) => {
-    setModalData(data);
-    setIsModalOpen(true);
-  };
+
 
   const closeModal = () => {
     setIsModalOpen(false);
@@ -31,12 +28,12 @@ function App() {
         <main className="flex-1 p-4 lg:p-8">
           <Navbar />
           <Routes>
-            <Route path="/" element={<About openModal={openModal} />} />
-            <Route path="/Eductaion-Experince" element={<Journey />} />
+            <Route path="/" element={<About  />} />
+            <Route path="/Resume" element={<Resume />} />
             <Route path="/Projects" element={<Projects />} />
               <Route path="/project/:id" element={<ProjectDetails />} />
             <Route path="/blog" element={<Blog />} />
-            <Route path="/blog" element={<Blog />} />
+            {/* <Route path="/blog" element={<Blog />} /> */}
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>
